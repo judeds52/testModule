@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>quiz questions</title>
+	<script src="https://kit.fontawesome.com/7d83c3208b.js" crossorigin="anonymous"></script>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	
+  	.card{
+  		width: 50%;
+  		text-align: center;
+  		border-radius: 30px; 
+  		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  		margin-left:20%;
+  		margin-top: 3%;
+  		margin-bottom: 3%
+
+  	}
+  </style>
+</head>
+<body>
+	<div class="card">
+	<form action="question.php" method="POST">
+
+		<!-- <input type="radio" name="qtn1chk" id="check1"><input type="text" id="opt1" name="">><br> -->
+
+
+		<input type="text" name="testName" placeholder="test Name" required="this field is required"><br><br><br>
+		
+		<div class="input-group">
+		<span class="input-group-addon"><b>1</b></span>	
+		<input type="text"	class="form-control" name="qtn1" placeholder="type your question here" maxlength="255" pattern="[^'\x22]+" required>
+	</div><br>
+		<input type="radio" id="check1" name="qtn1chk"><input type="text" id="opt1" name="qtn1opt1" maxlength="255" pattern="[^'\x22]+" required></input><br>
+		<input type="radio" id="check2" name="qtn1chk"><input type="text" id="opt2" name="qtn1opt2" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check3" name="qtn1chk"><input type="text" id="opt3" name="qtn1opt3" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check4" name="qtn1chk"><input type="text" id="opt4" name="qtn1opt4" maxlength="255" pattern="[^'\x22]+" required><br><br>
+
+		<div class="input-group">
+		<span class="input-group-addon"><b>2</b></span>	
+		<input type="text"	class="form-control" name="qtn2" placeholder="type your question here" maxlength="255" pattern="[^'\x22]+">
+	</div><br>
+		<input type="radio"  id="check5" name="qtn2chk"><input type="text" id="opt5" name="qtn2opt1" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio"  id="check6" name="qtn2chk"><input type="text" id="opt6" name="qtn2opt2" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio"  id="check7" name="qtn2chk"><input type="text" id="opt7" name="qtn2opt3" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check8"  name="qtn2chk"><input type="text" id="opt8" name="qtn2opt4" maxlength="255" pattern="[^'\x22]+" required><br><br>
+
+		<div class="input-group">
+		<span class="input-group-addon"><b>3</b></span>	
+		<input type="text"	class="form-control" name="qtn3" placeholder="type your question here" maxlength="255" pattern="[^'\x22]+" required>
+		</div><br>
+		<input type="radio" id="check9" name="qtn3chk"><input type="text"  id="opt9" name="qtn3opt1" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check10" name="qtn3chk"><input type="text" id="opt10"  name="qtn3opt2" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check11" name="qtn3chk"><input type="text" id="opt11"  name="qtn3opt3" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check12" name="qtn3chk"><input type="text" id="opt12"  name="qtn3opt4" maxlength="255" pattern="[^'\x22]+" required><br><br>
+
+		
+		<div class="input-group">
+		<span class="input-group-addon"><b>4</b></span>	
+		<input type="text"	class="form-control" name="qtn4" placeholder="type your question here" maxlength="255" pattern="[^'\x22]+" required>
+		</div><br>
+		<input type="radio" id="check13" name="qtn4chk"><input type="text" id="opt13" name="qtn4opt1" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check14" name="qtn4chk"><input type="text" id="opt14" name="qtn4opt2" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check15" name="qtn4chk"><input type="text" id="opt15" name="qtn4opt3" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check16" name="qtn4chk"><input type="text" id="opt16" name="qtn4opt4" maxlength="255" pattern="[^'\x22]+" required><br><br>
+
+		
+		<div class="input-group">
+		<span class="input-group-addon"><b>5</b></span>	
+		<input type="text"	class="form-control" name="qtn5" placeholder="type your question here" maxlength="255" pattern="[^'\x22]+" required>
+		</div><br>
+		<input type="radio" id="check17" name="qtn5chk"><input type="text" id="opt17" name="qtn5opt1" maxlength="255"  pattern="[^'\x22]+" required><br> 
+		<input type="radio" id="check18" name="qtn5chk"><input type="text" id="opt18" name="qtn5opt2" maxlength="255"  pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check19" name="qtn5chk"><input type="text" id="opt19" name="qtn5opt3" maxlength="255"  pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check20" name="qtn5chk"><input type="text" id="opt20" name="qtn5opt4" maxlength="255"  pattern="[^'\x22]+" required><br><br>
+
+		<div class="input-group">
+		<span class="input-group-addon"><b>6</b></span>	
+		<input type="text"	class="form-control" name="qtn6" placeholder="type your question here" maxlength="255" pattern="[^'\x22]+" required>
+		</div><br>
+		<input type="radio" id="check21" name="qtn6chk"><input type="text" id="opt21" name="qtn6opt1" maxlength="255"  pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check22" name="qtn6chk"><input type="text" id="opt22" name="qtn6opt2" maxlength="255"  pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check23" name="qtn6chk"><input type="text" id="opt23" name="qtn6opt3" maxlength="255"  pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check24" name="qtn6chk"><input type="text" id="opt24" name="qtn6opt4" maxlength="255" pattern="[^'\x22]+" required><br><br>
+
+
+		<div class="input-group">
+		<span class="input-group-addon"><b>7</b></span>	
+		<input type="text"	class="form-control" name="qtn7" placeholder="type your question here" maxlength="255" pattern="[^'\x22]+" required>
+		</div><br>
+		<input type="radio" id="check25" name="qtn7chk"><input type="text" id="opt25" name="qtn7opt1" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check26" name="qtn7chk"><input type="text" id="opt26" name="qtn7opt2" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check27" name="qtn7chk"><input type="text" id="opt27" name="qtn7opt3" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check28" name="qtn7chk"><input type="text" id="opt28" name="qtn7opt4" maxlength="255" pattern="[^'\x22]+" required><br><br>
+
+
+		
+		<div class="input-group">
+		<span class="input-group-addon"><b>8</b></span>	
+		<input type="text"	class="form-control" name="qtn8" placeholder="type your question here" maxlength="255" pattern="[^'\x22]+" required>
+		</div><br>
+		<input type="radio" id="check29" name="qtn8chk"><input type="text" id="opt29" name="qtn8opt1" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check30" name="qtn8chk"><input type="text" id="opt30" name="qtn8opt2" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check31" name="qtn8chk"><input type="text" id="opt31" name="qtn8opt3" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check32" name="qtn8chk"><input type="text" id="opt32" name="qtn8opt4" maxlength="255" pattern="[^'\x22]+" required><br><br>
+ 
+		<div class="input-group">
+		<span class="input-group-addon"><b>9</b></span>	
+		<input type="text"	class="form-control" name="qtn9" placeholder="type your question here" maxlength="255" pattern="[^'\x22]+" required>
+		</div><br>
+		<input type="radio" id="check33" name="qtn9chk"><input type="text" id="opt33" name="qtn9opt1" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check34" name="qtn9chk"><input type="text" id="opt34" name="qtn9opt2" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check35" name="qtn9chk"><input type="text" id="opt35" name="qtn9opt3" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check36" name="qtn9chk"><input type="text" id="opt36" name="qtn9opt4" maxlength="255" maxlength="255" pattern="[^'\x22]+" required><br><br>
+
+
+		<div class="input-group">
+		<span class="input-group-addon"><b>10</b></span>	
+		<input type="text"	class="form-control" name="qtn10" placeholder="type your question here" maxlength="255" pattern="[^'\x22]+" required>
+		</div><br>
+		<input type="radio" id="check37" name="qtn10chk"><input type="text" id="opt37" name="qtn10opt1" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check38" name="qtn10chk"><input type="text" id="opt38" name="qtn10opt2" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check39" name="qtn10chk"><input type="text" id="opt39" name="qtn10opt3" maxlength="255" pattern="[^'\x22]+" required><br>
+		<input type="radio" id="check40" name="qtn10chk"><input type="text" id="opt40" name="qtn10opt4" maxlength="255" pattern="[^'\x22]+" required><br><br> 
+		<br><br>
+		<div style="text-align: center;">
+		<input  type="submit" name="submit" class="btn btn-primary" onclick="check()">
+	</div>
+	</form>	
+</div>
+<script type="text/javascript">
+	function check() {
+//question 1
+		var opt1= document.getElementById('opt1').value
+		 document.getElementById('check1').value=opt1;
+
+		var opt2= document.getElementById('opt2').value
+		 document.getElementById('check2').value=opt2;
+		 
+		 var opt3= document.getElementById('opt3').value
+		 document.getElementById('check3').value=opt3;
+		 
+		 var opt4= document.getElementById('opt4').value
+		 document.getElementById('check4').value=opt4;
+		 
+//question 2
+	
+	var opt5= document.getElementById('opt5').value
+		 document.getElementById('check5').value=opt5;
+
+		var opt6= document.getElementById('opt6').value
+		 document.getElementById('check6').value=opt6;
+		 
+		 var opt7= document.getElementById('opt7').value
+		 document.getElementById('check7').value=opt7;
+		 
+		 var opt8= document.getElementById('opt8').value
+		 document.getElementById('check8').value=opt8;
+	
+//question 3
+
+	var opt9= document.getElementById('opt9').value
+		 document.getElementById('check9').value=opt9;
+
+		var opt10= document.getElementById('opt10').value
+		 document.getElementById('check10').value=opt10;
+		 
+		 var opt11= document.getElementById('opt11').value
+		 document.getElementById('check11').value=opt11;
+		 
+		 var opt12= document.getElementById('opt12').value
+		 document.getElementById('check12').value=opt12;
+
+
+
+//question 4
+
+	var opt13= document.getElementById('opt13').value
+		 document.getElementById('check13').value=opt13;
+
+		var opt14= document.getElementById('opt14').value
+		 document.getElementById('check14').value=opt14;
+		 
+		 var opt15= document.getElementById('opt15').value
+		 document.getElementById('check15').value=opt15;
+		 
+		 var opt16= document.getElementById('opt16').value
+		 document.getElementById('check16').value=opt16;
+
+//question 5
+
+	var opt17= document.getElementById('opt17').value
+		 document.getElementById('check17').value=opt17;
+
+		var opt18= document.getElementById('opt18').value
+		 document.getElementById('check18').value=opt18;
+		 
+		 var opt19= document.getElementById('opt19').value
+		 document.getElementById('check19').value=opt19;
+		 
+		 var opt20= document.getElementById('opt20').value
+		 document.getElementById('check20').value=opt20;
+
+//question 6 
+
+	var opt21= document.getElementById('opt21').value
+		 document.getElementById('check21').value=opt21;
+
+		var opt22= document.getElementById('opt22').value
+		 document.getElementById('check22').value=opt22;
+		 
+		 var opt23= document.getElementById('opt23').value
+		 document.getElementById('check23').value=opt23;
+		 
+		 var opt24= document.getElementById('opt24').value
+		 document.getElementById('check24').value=opt24;
+
+//question 7
+
+	var opt25= document.getElementById('opt25').value
+		 document.getElementById('check25').value=opt25;
+
+		var opt26= document.getElementById('opt26').value
+		 document.getElementById('check26').value=opt26;
+		 
+		 var opt27= document.getElementById('opt27').value
+		 document.getElementById('check27').value=opt27;
+		 
+		 var opt28= document.getElementById('opt28').value
+		 document.getElementById('check28').value=opt28;
+
+
+//question 8
+
+	var opt29= document.getElementById('opt29').value
+		 document.getElementById('check29').value=opt29;
+
+		var opt30= document.getElementById('opt30').value
+		 document.getElementById('check30').value=opt30;
+		 
+		 var opt31= document.getElementById('opt31').value
+		 document.getElementById('check31').value=opt31;
+		 
+		 var opt32= document.getElementById('opt32').value
+		 document.getElementById('check32').value=opt32;
+
+//question 9
+
+	var opt33= document.getElementById('opt33').value
+		 document.getElementById('check33').value=opt33;
+
+		var opt34= document.getElementById('opt34').value
+		 document.getElementById('check34').value=opt34;
+		 
+		 var opt35= document.getElementById('opt35').value
+		 document.getElementById('check35').value=opt35;
+		 
+		 var opt36= document.getElementById('opt36').value
+		 document.getElementById('check36').value=opt36;
+
+//question 10
+
+	var opt37= document.getElementById('opt37').value
+		 document.getElementById('check37').value=opt37;
+
+		var opt38= document.getElementById('opt38').value
+		 document.getElementById('check38').value=opt38;
+		 
+		 var opt39= document.getElementById('opt39').value
+		 document.getElementById('check39').value=opt39;
+		 
+		 var opt40= document.getElementById('opt40').value
+		 document.getElementById('check40').value=opt40;
+
+
+
+
+		// var type= document.getElementByName("qtn1chk")
+
+		// if (type[0].checked) {
+		// 	alert(type[0].value) 
+		// }
+		// if (type[1].checked) {
+		// 	alert(type[1].value)
+		// }
+	
+	}
+	
+
+</script>
+
+
+</body>
+</html>
